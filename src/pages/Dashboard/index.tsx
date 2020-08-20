@@ -59,38 +59,41 @@ const Dashboard: React.FC = () => {
 
   useEffect(() => {
     async function loadFoods(): Promise<void> {
-      if (selectedCategory !== undefined) {
-        const response = await api.get<Food[]>(
-          `/foods?category_like=${selectedCategory}`,
-        );
+      // if (selectedCategory !== undefined) {
+      //   const response = await api.get<Food[]>(
+      //     `/foods?category_like=${selectedCategory}`,
+      //   );
 
-        const formattedResponse = response.data.map(food => ({
-          ...food,
-          formattedPrice: formatValue(food.price),
-        }));
+      //   const formattedResponse = response.data.map(food => ({
+      //     ...food,
+      //     formattedPrice: formatValue(food.price),
+      //   }));
 
-        setFoods(formattedResponse);
-      } else if (searchValue.length > 1) {
-        const response = await api.get<Food[]>(
-          `/foods?name_like=${searchValue}`,
-        );
+      //   setFoods(formattedResponse);
+      // } else if (searchValue.length > 1) {
+      const response = await api.get<Food[]>('/foods', {
+        params: {
+          category_like: selectedCategory,
+          name_like: searchValue,
+        },
+      });
 
-        const formattedResponse = response.data.map(food => ({
-          ...food,
-          formattedPrice: formatValue(food.price),
-        }));
+      const formattedResponse = response.data.map(food => ({
+        ...food,
+        formattedPrice: formatValue(food.price),
+      }));
 
-        setFoods(formattedResponse);
-      } else {
-        const response = await api.get<Food[]>('/foods');
+      setFoods(formattedResponse);
+      // } else {
+      //   const response = await api.get<Food[]>('/foods');
 
-        const formattedResponse = response.data.map(food => ({
-          ...food,
-          formattedPrice: formatValue(food.price),
-        }));
+      //   const formattedResponse = response.data.map(food => ({
+      //     ...food,
+      //     formattedPrice: formatValue(food.price),
+      //   }));
 
-        setFoods(formattedResponse);
-      }
+      //   setFoods(formattedResponse);
+      // }
     }
 
     loadFoods();
