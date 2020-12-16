@@ -1,16 +1,6 @@
 <p align="center">
-    <img alt="GoStack" src="https://ap.imagensbrasil.org/images/2020/04/09/banner-bootcamp-gostack-11.png" style="border-radius:5px;"/>
+    <img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios-new.png" style="border-radius:5px;"/>
 </p>
-
-## :rocket: Desafio 11: GoRestaurant Mobile
-
-<p align="center">
-<img alt="Project working" src="https://media.giphy.com/media/ifSsIB2uxFRpM49Iph/giphy.gif" style="border-radius:5px;"/>
-</p>
-
-✔ [View challenge page](https://github.com/rocketseat-education/bootcamp-gostack-desafios/tree/master/desafio-react-native-delivery)
-
-🏁 Challenge finished on August 20, 2020
 
 <p align="center">
   <img alt="Languages" src="https://img.shields.io/github/languages/count/guitexa/bootcamp-gostack-challenge-11">
@@ -42,6 +32,16 @@
 
 </p>
 
+## :rocket: Desafio 11: GoRestaurant Mobile
+
+<p align="center">
+<img alt="Project working" src="https://media.giphy.com/media/ifSsIB2uxFRpM49Iph/giphy.gif" style="border-radius:5px;"/>
+</p>
+
+✔ [View challenge page](https://github.com/rocketseat-education/bootcamp-gostack-desafios/tree/master/desafio-react-native-delivery)
+
+🏁 Challenge finished on August 20, 2020
+
 ## 📜 About the project
 
 This project was proposed by Rocketseat on Bootcamp GoStack. The goal was to develop an App mobile to users order foods in a restaurant. This app can customize a plate before order and set a plate as favorite.
@@ -55,13 +55,6 @@ yarn
 # Run with Yarn
 yarn android | yarn ios
 ```
-
-## Author
-
-🙋🏻‍♂️ **Guilherme Teixeira**
-
-[![github](http://ap.imagensbrasil.org/images/2018/12/10/github-logo-1.png) ](https://github.com/guitexa)
-[![linkedin](http://ap.imagensbrasil.org/images/2018/12/10/linkedin-1.png)](https://www.linkedin.com/in/guitexa/)
 
 ## 🤝 Contributing
 
